@@ -325,9 +325,9 @@ domains_test:
 
 paths_without_crawlers:
   multiline: true
-  default:
-    - /web
-    - /website/info
+  default: |2
+      - /web
+      - /website/info
   help: >-
     Tell me the list of paths which where you want to forbid crawlers.
 
@@ -529,7 +529,7 @@ backup_dst:
     If you don't want backups, leave this empty.
 
     Where should the backups be stored?
-  default: ""
+  default: '""'
 
 backup_image_version:
   type: str
